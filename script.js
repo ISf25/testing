@@ -47,3 +47,17 @@ function activateSecurePlayer(container) {
   container.removeAttribute('onclick');
   container.style.cursor = 'default';
 }
+function activateMyMap(container) {
+  const mapId = container.dataset.mid;
+  const iframe = document.createElement('iframe');
+  iframe.src = `https://www.google.com/maps/d/embed?mid=${mapId}&ehbc=2E312F`;
+  iframe.setAttribute('loading', 'lazy');
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+  iframe.style.border = 'none';
+  container.innerHTML = '';
+  container.appendChild(iframe);
+  container.removeAttribute('onclick');
+  container.style.cursor = 'default';
+}
