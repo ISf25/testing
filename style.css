@@ -118,14 +118,13 @@ main {
     height: auto;
   }
 }
-/* @media (max-width:447px) {
-  .swit{
-    justify-content: center;
-  }  
+@media (max-width:447px) {
   .tab-btn {
-    width: 10%;
-  }
-} */
+    font-size: 4vw;
+    width:0.5em;
+    padding:2vw 2vw;
+  }  
+}
 .glass-card {
   background: rgba(255, 255, 255, 0.8) !important;
   backdrop-filter: blur(12px);
@@ -220,8 +219,3 @@ footer {
   padding: 10px 20px; 
   border-radius: 10px; 
 }
-.tab-btn {
-  font-size: 4vw;
-  width:0.5em;
-  padding:2vw 2vw;
-}  
